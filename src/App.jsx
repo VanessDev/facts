@@ -5,11 +5,13 @@ import FactList from "./components/FactList.jsx";
 import FactForm from "./components/FactForm.jsx";
 import FactEdit from "./components/FactEdit.jsx";
 import FactDetail from "./components/FactDetail.jsx";
+import DarkModeToggle from "./components/DarkModeToggle.jsx";
 import "./App.css";
 
 function App() {
   return (
     <div className="container">
+      
       <Header />
       <main>
         <Routes>
@@ -19,6 +21,7 @@ function App() {
            <Route path="/fact/:id" element={<FactDetail />} />
         </Routes>
       </main>
+      <DarkModeToggle/>
       <Footer />
     </div>
   );
